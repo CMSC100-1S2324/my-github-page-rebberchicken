@@ -5,13 +5,18 @@
     font-family: 'Century Gothic', sans-serif;
 }
 
-.nav-bar{
-    height: 100vh;
-    width: 100%;
-    background-color: skyblue;
-    background-image: url("mountain.png");
-    background-size: cover;
+body {
+    background: url("mountain.png");
     background-position: center;
+    background-color: skyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: auto;
+}
+
+.nav-bar{
+    height: 100%;
+    width: 100%;
 }
 
 nav{
@@ -38,4 +43,58 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(230, 255, 66);
     transition: .3s;
+}
+
+.about {
+    padding-top: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.about img {
+    width: 80%;
+    height: 30%;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 5px;
+    border-color:#B3CEE5;
+    background-color: #fff56b;   
+    margin: 5%;
+}
+
+.experience p {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-shadow: black;
+}
+
+
+.flex-item {
+    border-style: solid;
+    flex: auto;
+    width: 100%;
+    border-width: 3px;
+    border-color:blue;
 }
