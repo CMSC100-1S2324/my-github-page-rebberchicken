@@ -22,10 +22,20 @@ https://cmsc100-1s2324.github.io/my-github-page-rebberchicken/
 7. I went for a minimalistic approach in terms of design.
 
 Key features to note:
-- Transition animation in logo and navigation bar list
+- Keyframe transition animation in logo and navigation bar list
 - Fade in animation for featured photo
 - Transition animation when experience panels are hovered
-- Change in color when anchor elements are hovered
+- Change in color when anchor elements are hovered (e.g. nav bar, footer links)
 
 ○ What are your key takeaways from this exercise?
-TBA once complete
+My key takeaway for this exercise are the following:
+1. Git really helps in terms of documenting and restoring certain progress of the work.
+2. The syntax of HTML and CSS can be a bit confusing, but there are plenty of resources online that will help developers like me out!
+3. I feel like if I was given more time to accomplish this, I would have come up with a better design. But then again, this week has already been tiring and as of now, there is still no electricity to where I live in. :')
+4. I had fun reminiscing my HTML and CSS lessons back in CMSC 12, and I do hope I get to learn more about CMSC 100!
+
+Sincerely,
+Bernard Jezua R. Tandang
+2021-09992
+B.S. Computer Science Sophomore
+
