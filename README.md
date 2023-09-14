@@ -19,7 +19,13 @@ https://cmsc100-1s2324.github.io/my-github-page-rebberchicken/
 5. I had a checklist on which parts should I do first and this was in order from easiest to hardest:
    Header -> Footer -> Featured Photo -> Skills & Autobiography -> Experience
 6. It took me a long time to finish the experience panels since I wanted them to have an image overlay hover effect.
-7. TBA
+7. I went for a minimalistic approach in terms of design.
+
+Key features to note:
+- Transition animation in logo and navigation bar list
+- Fade in animation for featured photo
+- Transition animation when experience panels are hovered
+- Change in color when anchor elements are hovered
 
 ○ What are your key takeaways from this exercise?
 TBA once complete
