@@ -1,12 +1,14 @@
+/* Importing Muli (open-source) for default font */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-*{
+*{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
 }
 
+/* Body background */
 body {
     background: url("mountain.png");
     background-position: center;
@@ -16,17 +18,7 @@ body {
     background-position: auto;
 }
 
-@keyframes fadeDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px) scale(0.9);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
-}
-
+/* Navigation bar or Header style */
 .header {
     height: 10%;
     display: flex;
@@ -36,6 +28,7 @@ body {
     justify-content: center;
 }
 
+/* Logo image inside container */
 .image-container img {
     margin-top: 10px;
     width: 200px;
@@ -44,7 +37,7 @@ body {
     pointer-events: none;
 }
 
-
+/* Header list style */
 .header ul {
     list-style-type: none;
     padding: 0;
@@ -69,6 +62,7 @@ body {
     text-shadow: 4px 4px 10px black;
 }
 
+/* Feature Photo */
 .about {
     padding-top: 40px;
     margin: 20px;
@@ -92,11 +86,24 @@ body {
     pointer-events: none;
 }
 
+/* Keyframe Transitions */
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
+/* Flex box for experience text */
 .experience {
     display: flex;
     flex-direction: column; 
@@ -104,8 +111,8 @@ body {
     margin-top: 3%;
 }
 
+/* Text inside experience is centered */
 .experience p {
-    /* text-align: center; */
     margin-top: 3.5%;
     font-size: 28px;
     font-weight: bold;
@@ -114,6 +121,7 @@ body {
     text-shadow: 2px 2px 6px black;
 }
 
+/* This is responsible for having numerous text boxes in a row */
 .row {
     display: flex;
     justify-content: space-between; 
@@ -122,11 +130,22 @@ body {
     overflow: hidden;
 }
 
-.row .panels {
+/* Style for panels */
+.panels {
     flex: 1;
     height: 350px;
     width: 300px;
     background-color: #ffffff;
+    text-align: center;
+    border-color: blue;
+    margin: 0 10px;
+}
+
+/* Style for panels and its other elements inside a div class row */
+.row .panels {
+    flex: 1;
+    height: 350px;
+    width: 300px;
     text-align: center;
     position: relative;
     margin: 0 10px;
@@ -139,7 +158,6 @@ body {
     object-fit: cover;
 }
 
-
 .row .panels .overlay {
     position: absolute;
     transition: all .3s ease;
@@ -151,33 +169,38 @@ body {
     height: 100%;
 }
 
-.row .panels .panel-text {
+/* Responsible for the transition animation when pointer is hovered at an image */
+.panel-text {
     position: absolute;
-    top: 50%; /* Position text vertically in the middle */
-    left: 50%; /* Position text horizontally in the middle */
-    transform: translate(-50%, -50%); /* Center the text */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    font-size: 14px;
+    font-size: 13px;
 }
 
+/* Background color in panel goes from invisible to black */
 .row .panels:hover .overlay {
     opacity: 1;
 }
 
+/* Text in panel goes from invisible to white */
 .row .panels:hover .panel-text {
     opacity: 1;
 }
 
-.exp-panel {
+/* Flex box for skills and autobiography text */
+.skills-auto {
     flex: 1;
     margin-top: 5%;
 }
 
-.exp-panel p {
+
+.skills-auto p {
     margin-top: 3.5%;
     text-align: center;
     font-size: 28px;
@@ -185,21 +208,29 @@ body {
     text-decoration: none;
     color: white;
     text-shadow: black;
+    text-shadow: 2px 2px 6px black;
 }
 
-.panels {
-    flex: 1;
-    height: 350px;
-    width: 300px;
-    background-color: #ffffff;
+.skills-auto-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: black;
     text-align: center;
-    /* padding: 20px; */
-    /* border-style: dotted;
-    border-width: 3px; */
-    border-color: blue;
-    margin: 0 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    font-size: 15px;
 }
 
+.skills-auto-text ul {
+    list-style: circle;
+    text-align: left;
+    padding-left: 16px;
+}
+
+/* Style for footer elements */
 .footer {
     display: flex;
     flex: 1;
@@ -219,7 +250,7 @@ body {
     height: 60px;
 }
 
-
+/* Rows inside footer will lean center left */
 .footer .row {
     margin-left: 3%;
     display: flex;
@@ -229,6 +260,7 @@ body {
     color: white;
 }
 
+/* Transition animation when anchor elements inside row are hovered */
 .footer .row a {
     color: white;
     text-decoration: none;
