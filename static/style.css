@@ -1,0 +1,48 @@
+/* Importing Muli (open-source) for default font */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+/* This is responsible for having numerous text boxes in a row */
+.row {
+    display: flex;
+    justify-content: space-between; 
+    margin: 10px 0;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+/* Style for panels */
+.panels {
+    flex: 1;
+    height: 350px;
+    width: 300px;
+    background-color: #B3CEE5;
+    text-align: center;
+    border: 2px;
+    border-color: blue;
+    margin: 0 5px;
+}
+
+/* Style for panels and its other elements inside a div class row */
+
+.row .panels img {
+    width: 75%;
+    height: 50%;
+    object-fit: cover;
+}
+
+/* Responsible for the transition animation when pointer is hovered at an image */
+.panels panel-text {
+    color: black;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    text-align: center;
+    font-size: 13px;
+}
